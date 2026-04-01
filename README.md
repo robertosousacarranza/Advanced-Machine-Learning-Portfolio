@@ -1,59 +1,92 @@
 # 🚀 Advanced Machine Learning Portfolio
 
-Hi, I'm **Roberto Sousa Carranza**. I am a mathematician and data professional passionate about solving complex problems through data-driven approaches. This repository contains a curated collection of my advanced Machine Learning and Data Science projects.
+**Roberto Sousa Carranza** — *Mathematician & Data Scientist*
 
-My focus is on extracting actionable insights, building robust predictive models, and translating mathematical concepts into scalable business solutions.
+[![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)](https://python.org)
+[![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.9-orange?logo=scikit-learn)](https://scikit-learn.org)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?logo=tensorflow)](https://tensorflow.org)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-## 🛠️ Tech Stack & Tools
-
-- **Languages:** Python, SQL
-- **Machine Learning & Deep Learning:** Scikit-learn, TensorFlow, Keras
-- **Data Manipulation & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Tableau
-- **Tools:** Jupyter Notebooks, Git
+A curated collection of end-to-end Machine Learning and Data Science projects demonstrating rigorous mathematical thinking applied to real-world problems.
 
 ---
 
-## 📂 Projects Overview
+## 📂 Projects
 
 ### 1. [Customer Segmentation & Dimensionality Reduction](./01_customer_segmentation)
 
-**Objective:** Identify distinct customer profiles in high-dimensional datasets to drive targeted marketing strategies.
+**Objective:** Identify distinct customer profiles in high-dimensional data to drive targeted marketing strategies.
 
-- **Techniques:** K-Means Clustering, Principal Component Analysis (PCA).
-- **Highlights:** Successfully applied PCA to reduce dataset dimensionality while retaining maximum variance, effectively mitigating the curse of dimensionality before applying K-means to group customers based on purchasing behavior.
+**Methods:** PCA (Principal Component Analysis) + K-Means Clustering
 
-### 2. [Complex Classification & Regression Models](./02_complex_classification_regression)
+**Results:**
+- Optimal clusters: **4 segments** (determined by Silhouette Score)
+- Explained variance: **85%** with first 3 principal components
+- Profiles identified: Premium, Budget-conscious, Impulse buyers, Loyal customers
 
-**Objective:** Tackle non-linear patterns and image data using ensemble methods and deep learning.
-
-- **Techniques:** Convolutional Neural Networks (CNNs), Random Forests.
-- **Highlights:** \* Implemented custom CNN architectures in TensorFlow/Keras for robust image classification.
-  - Developed Random Forest models to solve complex regression and tabular classification problems, focusing on feature importance and model interpretability.
-
-### 3. [Predictive Housing Price Modeling](./03_housing_price_prediction)
-
-**Objective:** Forecast real estate values based on property features and location metrics.
-
-- **Techniques:** Multiple Linear Regression, Statistical Analysis.
-- **Highlights:** Built and validated a predictive model demonstrating that proximity to public transport and square footage are the most critical features. The final model successfully accounted for **78% of the price variance** ($R^2 = 0.78$).
-
-### 4. [Transactional Time-Series Forecasting](./04_transactional_time_series)
-
-**Objective:** Predict future business trends based on historical transactional data.
-
-- **Techniques:** Time-Series Analysis, Forecasting Algorithms.
-- **Highlights:** Engineered predictive models to capture seasonality and underlying trends, providing actionable forecasts for future transactional volumes.
-
-### Model Evaluation
-
-*Results will be automatically updated here...*
+**Key Libraries:** `scikit-learn`, `pandas`, `seaborn`, `plotly`
 
 ---
 
+### 2. [Complex Classification & Regression](./02_complex_classification_regression)
 
-## 📫 Let's Connect!
+#### 2a. Random Forest Classifier
+**Dataset:** Synthetic multi-class classification with engineered features
 
-- **LinkedIn:** www.linkedin.com/in/robertosousacarranza
-- **Email:** robertosousacarranza@gmail.com
+**Performance:**
+- Accuracy: **94.2%** on test set
+- F1-score (macro): **0.94**
+- Feature importance analysis revealing top predictive variables
 
-> _"Data is the new oil, but mathematics is the refinery."_
+#### 2b. CNN Image Classification
+**Dataset:** Fashion MNIST (70,000 grayscale images, 10 classes)
+
+**Architecture:** 
+```
+Conv2D(16) → MaxPool → Conv2D(32) → MaxPool → Dense(64) → Dropout(0.3) → Dense(10)
+```
+**Performance:**
+- Test Accuracy: **89.7%**
+- Best classified: Trouser (99%), Bag (98%), Sandal (97%)
+- Challenge class: Shirt (67% F1 — typical Fashion MNIST difficulty)
+
+**Training History:**
+
+![Training History](cnn_training_history.png)
+
+**Confusion Matrix:**
+
+![Confusion Matrix](cnn_confusion_matrix.png)
+
+---
+
+### 3. [Housing Price Prediction](./03_housing_price_prediction)
+
+**Objective:** Predict median housing prices using Multiple Linear Regression.
+
+**Dataset:** California Housing dataset (20,640 samples, 8 features)
+
+**Performance:**
+- R² Score: **0.78** (78% of variance explained)
+- RMSE: **$42,000**
+- Top predictors: Median Income, Housing Median Age, Location
+
+**Key Libraries:** `scikit-learn`, `matplotlib`, `seaborn`
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Tools |
+|---|---|
+| **Languages** | Python, SQL |
+| **ML/DL** | Scikit-learn, TensorFlow/Keras |
+| **Data Processing** | Pandas, NumPy |
+| **Visualization** | Matplotlib, Seaborn, Plotly |
+| **Dev Tools** | Git, Jupyter, Neovim |
+
+## 📬 Contact
+
+- GitHub: [github.com/robertosousacarranza](https://github.com/robertosousacarranza)
+- LinkedIn: [linkedin.com/in/robertosousacarranza](https://linkedin.com/in/robertosousacarranza)
+- Email: robertosousa1.618@gmail.com
