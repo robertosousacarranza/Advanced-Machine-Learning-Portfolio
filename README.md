@@ -1,27 +1,45 @@
-# Portafolio de Análisis de datos
+# 🚀 Advanced Machine Learning Portfolio
 
-## Sobre mí
+Hi, I'm **Roberto Sousa Carranza**. I am a mathematician and data professional passionate about solving complex problems through data-driven approaches. This repository contains a curated collection of my advanced Machine Learning and Data Science projects.
 
-Matemático, especializado en Análisis de datos con habilidades de análisis, problemas de optimización y con experiencia en Machine Learning
+My focus is on extracting actionable insights, building robust predictive models, and translating mathematical concepts into scalable business solutions.
 
-## Proyectos
+## 🛠️ Tech Stack & Tools
+* **Languages:** Python, SQL
+* **Machine Learning & Deep Learning:** Scikit-learn, TensorFlow, Keras
+* **Data Manipulation & Visualization:** Pandas, NumPy, Matplotlib, Seaborn, Tableau
+* **Tools:** Jupyter Notebooks, Git
 
-### K vecinos
+---
 
-https://github.com/RobSous/k-vecinos.git
+## 📂 Projects Overview
 
-### Regresión Lineal
+### 1. [Customer Segmentation & Dimensionality Reduction](./01_customer_segmentation)
+**Objective:** Identify distinct customer profiles in high-dimensional datasets to drive targeted marketing strategies.
+* **Techniques:** K-Means Clustering, Principal Component Analysis (PCA).
+* **Highlights:** Successfully applied PCA to reduce dataset dimensionality while retaining maximum variance, effectively mitigating the curse of dimensionality before applying K-means to group customers based on purchasing behavior.
 
-https://github.com/RobSous/regresion_lineal.git
+### 2. [Complex Classification & Regression Models](./02_complex_classification_regression)
+**Objective:** Tackle non-linear patterns and image data using ensemble methods and deep learning.
+* **Techniques:** Convolutional Neural Networks (CNNs), Random Forests.
+* **Highlights:** * Implemented custom CNN architectures in TensorFlow/Keras for robust image classification.
+  * Developed Random Forest models to solve complex regression and tabular classification problems, focusing on feature importance and model interpretability.
 
-### Árboles aleatorios
+### 3. [Predictive Housing Price Modeling](./03_housing_price_prediction)
+**Objective:** Forecast real estate values based on property features and location metrics.
+* **Techniques:** Multiple Linear Regression, Statistical Analysis.
+* **Highlights:** Built and validated a predictive model demonstrating that proximity to public transport and square footage are the most critical features. The final model successfully accounted for **78% of the price variance** ($R^2 = 0.78$).
 
-https://github.com/RobSous/bosques_aleatorios.git
+### 4. [Transactional Time-Series Forecasting](./04_transactional_time_series)
+**Objective:** Predict future business trends based on historical transactional data.
+* **Techniques:** Time-Series Analysis, Forecasting Algorithms.
+* **Highlights:** Engineered predictive models to capture seasonality and underlying trends, providing actionable forecasts for future transactional volumes.
 
+---
 
-## Skills
+## 📫 Let's Connect!
+* **LinkedIn:** [Insert your LinkedIn URL]
+* **Email:** [Insert your Email]
+* **Portfolio/Website:** [Insert link if you have one]
 
-- **Programación**: Python, SQL, MATLAB, C++
-- **Librerias de Machine Liarning**: Scikit-learn, TensorFlow, Keras
-- **Análisis de datos**: Pandas, NumPy, Matplotlib
-- **Herramientas**: Jupyter, Git, Power BI
+> *"Data is the new oil, but mathematics is the refinery."*
