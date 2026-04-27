@@ -44,7 +44,12 @@ My focus is on extracting actionable insights, building robust predictive models
 - **Techniques:** Time-Series Analysis, Forecasting Algorithms.
 - **Highlights:** Engineered predictive models to capture seasonality and underlying trends, providing actionable forecasts for future transactional volumes.
 
+### Evaluación de los Modelos
+
+*Los resultados se actualizarán aquí automáticamente...*
+
 ---
+
 
 ## 📫 Let's Connect!
 
